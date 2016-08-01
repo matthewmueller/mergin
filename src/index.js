@@ -29,6 +29,8 @@ let types = {
  */
 
 function merge (type) {
+  type = '.' + type.replace(/^\./, '')
+
   let contents = sliced(arguments, 1)
   let strategy = null
 

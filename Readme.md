@@ -1,6 +1,15 @@
 # mergin
 
-merges files together using simple hueristics
+Merges files together using a best-effort merge. Returns false if it doesn't know how to merge the files
+
+## Supported files
+
+- Markdown files
+- JSON files
+- YAML files
+- .gitignore
+- .npmignore
+- package.json (doesn't handle scripts yet)
 
 ## Install
 
@@ -8,9 +17,14 @@ merges files together using simple hueristics
 npm install mergin
 ```
 
-## Documentation
+## Usage
 
-Coming soon!
+```js
+let merge = require('mergin')
+let merged = merge('md', '# original', '# update')
+```
+
+See the tests for more examples.
 
 ## Test
 
