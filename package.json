@@ -1,0 +1,31 @@
+{
+  "name": "mergin",
+  "private": false,
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "description": "merges files together using simple hueristics",
+  "dependencies": {
+    "deep-extend": "0.4.1",
+    "is-match": "0.4.1",
+    "js-yaml": "3.6.1",
+    "lodash.uniq": "4.4.0",
+    "remark": "5.0.1",
+    "remark-parse": "1.0.0",
+    "remark-stringify": "1.0.0",
+    "simple-markdown": "0.1.1",
+    "sliced": "1.0.1",
+    "tidy-html5": "0.1.1",
+    "unist-util-visit-parents": "1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "snazzy": "*",
+    "dependency-check": "*",
+    "co-mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "mocha -w",
+    "deps": "dependency-check . && dependency-check . --extra --no-dev"
+  }
+}

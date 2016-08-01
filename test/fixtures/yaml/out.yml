@@ -1,0 +1,8 @@
+version: '2'
+services:
+  www:
+    image: www
+  sql:
+    image: postgres
+  nsq:
+    image: nsq
