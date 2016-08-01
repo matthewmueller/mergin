@@ -10,11 +10,7 @@
     "js-yaml": "3.6.1",
     "lodash.uniq": "4.4.0",
     "remark": "5.0.1",
-    "remark-parse": "1.0.0",
-    "remark-stringify": "1.0.0",
-    "simple-markdown": "0.1.1",
     "sliced": "1.0.1",
-    "tidy-html5": "0.1.1",
     "unist-util-visit-parents": "1.0.0"
   },
   "devDependencies": {

@@ -26,6 +26,10 @@ let merged = merge('md', '# original', '# update')
 
 See the tests for more examples.
 
+## Contributing
+
+100% open to adding new file types. Pull requests > Feature requests.
+
 ## Test
 
 ```
