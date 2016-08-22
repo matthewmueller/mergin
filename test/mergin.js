@@ -77,6 +77,15 @@ describe('merge', function () {
     })
   })
 
+  describe('.gitignore', function() {
+    it('should merge two .gitignore files', function() {
+      let a = read('gitignore/a.gitignore')
+      let b = read('gitignore/b.gitignore')
+      let out = read('gitignore/out.gitignore')
+      assert.equal(merge('.gitignore', a, b), out)
+    })
+  })
+
   describe('package.json', function() {
     it.skip('should handle scripts', function() {
 

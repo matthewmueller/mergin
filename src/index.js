@@ -17,11 +17,11 @@ module.exports = merge
  */
 
 let types = {
-  '.{gitignore,npmignore}': require('./concat'),
-  'package.json': require('./package.json'),
-  '*.{md,markdown}': require('./md'),
-  '*.y?(a)ml': require('./yaml'),
-  '*.json': require('./json')
+  '\.(?:gitignore|npmignore)$': require('./concat'),
+  'package\.json$': require('./package.json'),
+  '\.(?:md|markdown)$': require('./md'),
+  '\.ya?ml$': require('./yaml'),
+  '\.json$': require('./json')
 }
 
 /**
@@ -39,7 +39,7 @@ function merge (type) {
   if (contents.length === 1) return contents.join('')
 
   for (let key in types) {
-    if (is_match('**/' + key)(type)) {
+    if (is_match(new RegExp(key))(type)) {
       strategy = types[key]
       break
     }
